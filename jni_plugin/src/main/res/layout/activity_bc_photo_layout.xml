@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_bcidd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_00000000">
+
+    <Button
+        android:id="@+id/btn_bcidd_cancel_blocking_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_00000000"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_bcidd_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2000000">
+
+    </RelativeLayout>
+
+    <tech.yunjing.biconlife.jniplugin.view.photoView.BCPhotoViewPager
+        android:id="@+id/bc_view_pager_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </tech.yunjing.biconlife.jniplugin.view.photoView.BCPhotoViewPager>
+
+    <TextView
+        android:id="@+id/bc_tv_image_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/lk_dp_10"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/lk_sp_12"
+        android:background="@drawable/shape_dbpv_btn_bg"
+        android:paddingLeft="@dimen/lk_dp_10"
+        android:paddingRight="@dimen/lk_dp_10"
+        android:paddingTop="@dimen/lk_dp_5"
+        android:paddingBottom="@dimen/lk_dp_5"/>
+
+
+    <TextView
+        android:id="@+id/bc_tv_save_image_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/lk_dp_10"
+        android:paddingRight="@dimen/lk_dp_10"
+        android:paddingTop="@dimen/lk_dp_5"
+        android:paddingBottom="@dimen/lk_dp_5"
+        android:layout_margin="@dimen/lk_dp_10"
+        android:text="保存"
+        android:background="@drawable/shape_dbpv_btn_bg"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/lk_sp_14"
+        android:visibility="visible"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/rl_vl_parent_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_root"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_loading"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <tech.yunjing.biconlife.liblkclass.widget.Loader.LKLoadingView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/lkv_loading"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:indicatorColor="#FFF"/>
+
+            <TextView
+                android:id="@+id/tv_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="加载中..."
+                android:textColor="#fff"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_lkv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/default_vl_loading_bg"
+            android:scaleType="matrix"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

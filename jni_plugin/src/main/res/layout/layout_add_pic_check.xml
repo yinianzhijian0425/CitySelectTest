@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+
+    <ImageView
+        android:id="@+id/iv_defaultpicture"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lk_dp_100"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_meeting_add_friend" />
+
+
+</LinearLayout>
+
+

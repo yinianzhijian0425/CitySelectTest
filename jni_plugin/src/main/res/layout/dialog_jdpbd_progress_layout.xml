@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/rl_jdpbd_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_jdpbd_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/lk_dp_15"
+            android:textColor="@color/color_2D2A2A"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb_jdpbd_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_marginLeft="@dimen/lk_dp_10"
+            android:layout_marginRight="@dimen/lk_dp_10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_jdpbd_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_jdpbd_top"
+        android:background="@color/color_FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_jdpbd_progress_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/jni_cancel_and_confirm_bg"
+            android:gravity="center"
+            android:padding="@dimen/lk_dp_15"
+            android:textColor="@color/color_2D2A2A"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

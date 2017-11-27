@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/iv_voip_meetingPic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lk_dp_100"
+        android:layout_centerInParent="true" />
+
+
+    <tech.yunjing.biconlife.jniplugin.im.voip.view.VoIPWaitingView
+        android:id="@+id/vp_voip_waiting"
+        android:layout_width="@dimen/lk_dp_50"
+        android:layout_height="@dimen/lk_dp_50"
+        android:layout_centerInParent="true" />
+
+    <FrameLayout
+        android:id="@+id/fl_meeting_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>
+

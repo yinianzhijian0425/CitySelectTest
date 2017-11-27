@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_171818">
+
+
+    <ImageView
+        android:id="@+id/iv_sva_min"
+        android:layout_width="@dimen/lk_dp_35"
+        android:layout_height="@dimen/lk_dp_35"
+        android:layout_margin="@dimen/lk_dp_15"
+        android:padding="@dimen/lk_dp_5"
+        android:src="@mipmap/icon_voice_min"
+        android:visibility="invisible" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_sva_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_sva_min"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <tech.yunjing.biconlife.liblkclass.widget.LKCircleImageView
+            android:id="@+id/iv_sva_avatar"
+            android:layout_width="@dimen/lk_dp_120"
+            android:layout_height="@dimen/lk_dp_120"
+            android:scaleType="fitXY"
+            android:src="@mipmap/default_user_voip_avatar" />
+
+
+        <TextView
+            android:id="@+id/tv_sva_nickUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/lk_dp_15"
+            android:paddingTop="@dimen/lk_dp_15"
+            android:text="@string/str_sva_nick"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/lk_sp_20" />
+
+
+        <TextView
+            android:id="@+id/tv_sva_callMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="邀请你语音聊天"
+            android:textColor="@color/color_B3FFFFFF"
+            android:textSize="15dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_sva_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_sva_head"
+        android:layout_marginTop="@dimen/lk_dp_100">
+
+
+        <LinearLayout
+            android:id="@+id/ll_sva_times"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/lk_dp_10"
+                android:gravity="center"
+                android:text="通话时长"
+                android:textColor="@color/color_B3FFFFFF"
+                android:textSize="@dimen/lk_sp_14" />
+
+            <Chronometer
+                android:id="@+id/ct_sva_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/lk_dp_5"
+                android:gravity="center"
+                android:text="@string/str_sva_timeValue"
+                android:textColor="@color/color_B3FFFFFF"
+                android:textSize="@dimen/lk_sp_18"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_sva_status">
+
+
+        <LinearLayout
+            android:id="@+id/ll_sva_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_sva_mute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_sva_mute"
+                    android:layout_width="@dimen/lk_dp_60"
+                    android:layout_height="@dimen/lk_dp_60"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/voice_jy_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_sva_mute"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/lk_dp_8"
+                    android:gravity="center"
+                    android:text="@string/str_sva_mute"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="@dimen/lk_sp_12" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sva_outEnd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_sva_outEnd"
+                    android:layout_width="@dimen/lk_dp_60"
+                    android:layout_height="@dimen/lk_dp_60"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_voice_end" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_sva_outEnd"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/lk_dp_8"
+                    android:gravity="center"
+                    android:text="@string/str_sva_end"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="@dimen/lk_sp_12" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sva_mt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_sva_mt"
+                    android:layout_width="@dimen/lk_dp_60"
+                    android:layout_height="@dimen/lk_dp_60"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/voice_mt_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_sva_mt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/lk_dp_8"
+                    android:gravity="center"
+                    android:text="@string/str_sva_mt"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="@dimen/lk_sp_12" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_sva_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_sva_incomeEnd"
+                    android:layout_width="@dimen/lk_dp_60"
+                    android:layout_height="@dimen/lk_dp_60"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_voice_end" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_sva_incomeEnd"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/lk_dp_8"
+                    android:gravity="center"
+                    android:text="@string/str_sva_end"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="@dimen/lk_sp_12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_sva_incomeAccept"
+                    android:layout_width="@dimen/lk_dp_60"
+                    android:layout_height="@dimen/lk_dp_60"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_voice_accept" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_sva_incomeAccept"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/lk_dp_8"
+                    android:gravity="center"
+                    android:text="@string/str_sva_accept"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="@dimen/lk_sp_12" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

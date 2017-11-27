@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CitySelectTest.iml" filepath="$PROJECT_DIR$/CitySelectTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jni_plugin/jni_plugin.iml" filepath="$PROJECT_DIR$/jni_plugin/jni_plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib.baselib/lib.baselib.iml" filepath="$PROJECT_DIR$/lib.baselib/lib.baselib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lkclass/lkclass.iml" filepath="$PROJECT_DIR$/lkclass/lkclass.iml" />
+    </modules>
+  </component>
+</project>

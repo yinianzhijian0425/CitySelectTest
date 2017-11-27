@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">jniplugin</string>
+
+    <string name="str_jni_dialog_btn_cancel">取消</string>
+    <string name="str_jni_dialog_btn_confirm">确认</string>
+
+    <!-- 音视频选择dialog　vvd_表示dialog选择-->
+    <string name="str_vvd_socialChangeTitle">请选择</string>
+    <string name="str_vvd_socialVoiceCall">语音通话</string>
+    <string name="str_vvd_socialVideoCall">视频通话</string>
+    <string name="str_vvd_socialCancel">取消</string>
+
+    <!-- 音视频选择dialog　sva_表示单聊Activity-->
+    <string name="str_sva_nick">昵称</string>
+    <string name="str_sva_callTime">语音时长</string>
+    <string name="str_sva_timeValue">00:00</string>
+    <string name="str_sva_mute">静音</string>
+    <string name="str_sva_camera_zh">摄像头转换</string>
+    <string name="str_sva_mt">免提</string>
+    <string name="str_sva_end">挂断</string>
+    <string name="str_sva_accept">接听</string>
+
+    <string name="str_sva_camera_openOrClose">摄像头</string>
+
+    <string name="tips_not_wifi">您当前正在使用移动网络，继续播放将消耗流量</string>
+    <string name="tips_not_wifi_cancel">停止播放</string>
+    <string name="tips_not_wifi_confirm">继续播放</string>
+    <!--<string name="agora_app_id">b6c82b8e4bd44356bee052d85788cbcf</string>-->
+    <string name="agora_app_id">170dcb05485646c7a8584efdd8661481</string>
+
+</resources>

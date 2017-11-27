@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"  >
+
+    <RelativeLayout
+        android:id="@+id/rlTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lk_dp_50"
+        android:background="@color/color_FFFFFF">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/selector_whitetitle_btn"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/lk_dp_10"
+            android:paddingRight="@dimen/lk_dp_10"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/lk_dp_20"
+                android:layout_height="@dimen/lk_dp_20"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/selector_back_bg" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="图片"
+            android:textColor="@color/color_434343"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="确定"
+            android:textColor="@color/color_434343"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fmImageList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />
+
+</LinearLayout>

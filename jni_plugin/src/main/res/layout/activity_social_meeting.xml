@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_171818">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <tech.yunjing.biconlife.jniplugin.im.voip.view.MeetingLayoutAddPic
+            android:id="@+id/ll_meeting_allMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+        <ImageView
+            android:id="@+id/iv_meeting_min"
+            android:layout_width="@dimen/lk_dp_35"
+            android:layout_height="@dimen/lk_dp_35"
+            android:layout_margin="@dimen/lk_dp_15"
+            android:padding="@dimen/lk_dp_5"
+            android:src="@mipmap/icon_voice_min"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_meeting_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/lk_dp_100"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_meeting_avatar"
+            android:layout_width="@dimen/lk_dp_100"
+            android:layout_height="@dimen/lk_dp_100"
+            android:src="@mipmap/icon_choose_group_default" />
+
+
+        <TextView
+            android:id="@+id/tv_meeting_nickUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/lk_dp_10"
+            android:text="@string/str_sva_nick"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/lk_sp_18" />
+
+
+        <TextView
+            android:id="@+id/tv_meeting_callMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="邀请你视频聊天"
+            android:textColor="@color/color_B3FFFFFF"
+            android:textSize="@dimen/lk_sp_13"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_meeting_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/lk_dp_20"
+            android:text="其他成员"
+            android:textColor="@color/color_B3FFFFFF"
+            android:textSize="@dimen/lk_sp_13"
+            android:visibility="visible" />
+
+
+        <tech.yunjing.biconlife.jniplugin.im.voip.view.MeetingIncomeAddPic
+            android:id="@+id/ll_meeting_otherImg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lk_dp_44"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/lk_dp_20"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/iv_meeting_center"
+        android:layout_width="@dimen/lk_px_1"
+        android:layout_height="@dimen/lk_px_1"
+        android:layout_centerInParent="true" />
+
+    <Chronometer
+        android:id="@+id/ct_meeting_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_meeting_center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/lk_dp_50"
+        android:text="@string/str_sva_timeValue"
+        android:textColor="@color/color_B3FFFFFF"
+        android:textSize="@dimen/lk_sp_18"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_meeting_options"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ct_meeting_timer">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_meeting_optionAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_meeting_mute"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_meeting_mute"
+                        android:layout_width="@dimen/lk_dp_60"
+                        android:layout_height="@dimen/lk_dp_60"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/voice_jy_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_meeting_mute"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/lk_dp_8"
+                        android:gravity="center"
+                        android:text="@string/str_sva_mute"
+                        android:textColor="@color/color_FFFFFF"
+                        android:textSize="@dimen/lk_sp_12" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_meeting_mt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_meeting_mt"
+                        android:layout_width="@dimen/lk_dp_60"
+                        android:layout_height="@dimen/lk_dp_60"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/voice_mt_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_meeting_mt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/lk_dp_8"
+                        android:gravity="center"
+                        android:text="@string/str_sva_mt"
+                        android:textColor="@color/color_FFFFFF"
+                        android:textSize="@dimen/lk_sp_12" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_meeting_camera"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_meeting_camera"
+                        android:layout_width="@dimen/lk_dp_60"
+                        android:layout_height="@dimen/lk_dp_60"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/meeting_crema_selector" />
+
+                    <TextView
+                        android:id="@+id/tv_meeting_openOrCloseCream"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_meeting_camera"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/lk_dp_8"
+                        android:gravity="center"
+                        android:text="@string/str_sva_camera_openOrClose"
+                        android:textColor="@color/color_FFFFFF"
+                        android:textSize="@dimen/lk_sp_12" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/lk_dp_30">
+
+                <ImageView
+                    android:id="@+id/iv_meeting_outEnd"
+                    android:layout_width="@dimen/lk_dp_60"
+                    android:layout_height="@dimen/lk_dp_60"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_voice_end" />
+
+                <LinearLayout
+                    android:id="@+id/ll_meeting_income"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_meeting_outEnd"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/iv_meeting_incomeEnd"
+                            android:layout_width="@dimen/lk_dp_60"
+                            android:layout_height="@dimen/lk_dp_60"
+                            android:layout_centerHorizontal="true"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/icon_voice_end" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/iv_meeting_incomeAccept"
+                            android:layout_width="@dimen/lk_dp_60"
+                            android:layout_height="@dimen/lk_dp_60"
+                            android:layout_centerHorizontal="true"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/icon_voice_accept" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<resources>
+    <style name="SwitchButtonMD">
+        <item name="kswThumbDrawable">@drawable/selector_sb_md_thumb</item>
+        <item name="kswBackColor">@color/selector_sb_md_back_color</item>
+        <item name="kswBackMeasureRatio">1.45</item>
+        <item name="kswThumbMarginLeft">-16dp</item>
+        <item name="kswThumbMarginTop">-14dp</item>
+        <item name="kswThumbMarginRight">-16dp</item>
+        <item name="kswThumbMarginBottom">-14dp</item>
+        <item name="kswThumbWidth">@dimen/lk_dp_42</item>
+        <item name="kswThumbHeight">@dimen/lk_dp_42</item>
+    </style>
+
+    <!--用户详情界面Dialogstyle 底部弹出、宽度全屏的Dialog-->
+    <style name="UserDetailsDialogStyle" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--阴影-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置屏幕变暗 -->
+    </style>
+    <!-- Base application theme. -->
+    <style name="SelTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <!--横向分割线公共样式-->
+    <style name="CommonHorizontalDividingLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#DDDDDD</item>
+    </style>
+
+    <!--纵向分割线公共样式-->
+    <style name="CommonVerticalDividingLineStyle">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#DDDDDD</item>
+    </style>
+
+</resources>

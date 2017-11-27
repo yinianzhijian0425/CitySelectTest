@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <tech.yunjing.biconlife.libbaselib.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/lk_dp_50" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/lk_dp_20"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_cancel"
+                android:layout_width="@dimen/lk_dp_25"
+                android:layout_height="@dimen/lk_dp_25"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_openLamplight"
+                android:layout_width="@dimen/lk_dp_25"
+                android:layout_height="@dimen/lk_dp_25"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="@dimen/lk_dp_25"
+                android:layout_height="@dimen/lk_dp_25"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/lk_dp_20"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_tex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="上传您的病例/体检报告/条形码即可自动扫描"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="@dimen/lk_sp_12"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_scf_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_scf_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/selector_check_scan" />
+
+                <TextView
+                    android:id="@+id/tv_scf_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lk_dp_10"
+                    android:text="二维码"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="@dimen/lk_sp_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_scf_descern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lk_dp_45"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_photo_tj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/selector_check_descern" />
+
+                <TextView
+                    android:id="@+id/tv_scf_discern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lk_dp_10"
+                    android:text="文字识别"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="@dimen/lk_sp_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/viewstub_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lk_dp_50"
+        android:background="@color/transparent"
+        android:layout="@layout/layout_include_title" />
+
+</RelativeLayout>

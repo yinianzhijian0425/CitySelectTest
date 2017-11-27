@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/rl_cacd_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cacd_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/lk_dp_15"
+            android:textColor="@color/color_2D2A2A"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_cacd_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/lk_dp_15"
+            android:textColor="@color/color_919090"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_cacd_center_divider"
+        style="@style/CommonHorizontalDividingLineStyle"
+        android:layout_below="@+id/rl_cacd_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_cacd_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_cacd_center_divider"
+        android:background="@color/color_FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_cacd_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/cancel_and_confirm_bg"
+            android:gravity="center"
+            android:padding="@dimen/lk_dp_15"
+            android:text="@string/str_bc_dialog_btn_cancel"
+            android:textColor="@color/color_919090"
+            android:textSize="15sp" />
+
+        <View
+            style="@style/CommonVerticalDividingLineStyle"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/lk_dp_10" />
+
+        <TextView
+            android:id="@+id/btn_cacd_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/cancel_and_confirm_bg"
+            android:gravity="center"
+            android:padding="@dimen/lk_dp_15"
+            android:text="@string/str_bc_dialog_btn_confirm"
+            android:textColor="@color/color_EF7726"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

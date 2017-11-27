@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Lib.baselib</string>
+
+    <string name="str_bc_dialog_btn_cancel">取消</string>
+    <string name="str_bc_dialog_btn_confirm">确认</string>
+
+    <string name="string_network_error">网络出现了问题，请检查网络设置</string>
+
+    <!-- 邀请页面-->
+    <string name="str_share_friends">朋友圈</string>
+    <string name="str_share_wechat">微信</string>
+    <string name="str_share_qq">QQ</string>
+    <string name="str_check_net">请检查网络</string>
+
+    <string name="str_share_boto">伯图好友</string>
+    <string name="str_share_weixin">微信好友</string>
+    <string name="str_share_wechat_circle">朋友圈</string>
+    <string name="str_share_qq_friend">QQ好友</string>
+    <string name="str_share_life_circle">好友圈</string>
+    <string name="str_share_copy_link">复制链接</string>
+    <string name="str_share_sina">新浪微博</string>
+    <string name="str_nda_share_cancel">取消</string>
+
+    <string name="str_success_share">分享成功</string>
+    <string name="str_failed_share">很遗憾，分享失败</string>
+    <string name="str_cancel_share">取消分享</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="pull_to_refresh_pull_label_more">加载更多…</string>
+    <string name="pull_to_refresh_release_label_more">放开以加载…</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+    <string name="str_no_data">暂无数据</string>
+    <!--<string name="str_data_loaded">数据加载完毕</string>-->
+    <string name="str_scanning">扫一扫</string>
+    <string name="str_photo_album">相册</string>
+    <string name="str_scan_text">将扫描框对准条形码/二维码,即可自动扫描</string>
+    <string name="str_scan_text_my_code">我的二维码</string>
+
+    <string name="str_mia_system_camera">相机</string>
+    <string name="str_mia_system_photo_album">相册中选择</string>
+    <string name="str_mia_system_exit">退出</string>
+
+</resources>

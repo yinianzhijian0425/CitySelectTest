@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/ll_dtpt_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_dtpt_pic"
+            android:layout_width="@dimen/lk_dp_25"
+            android:layout_height="@dimen/lk_dp_25"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_succeed" />
+
+        <TextView
+            android:id="@+id/tv_dtpt_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/lk_dp_15"
+            android:paddingLeft="@dimen/lk_dp_5"
+            android:paddingTop="@dimen/lk_dp_15"
+            android:text="刷新成功"
+            android:textColor="@color/color_565353"
+            android:textSize="@dimen/lk_sp_16" />
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:id="@+id/v_dtpt_line"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/lk_px_1"-->
+        <!--android:layout_below="@+id/ll_dtpt_tip"-->
+        <!--android:background="@color/color_E2E2E2" />-->
+</RelativeLayout>

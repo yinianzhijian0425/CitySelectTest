@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <!--聊天按钮-->
+        <RelativeLayout
+            android:id="@+id/rl_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_tab_icon"
+                android:layout_width="@dimen/lk_dp_20"
+                android:layout_height="@dimen/lk_dp_20" />
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_alignRight="@id/iv_tab_icon"
+                android:layout_alignTop="@id/iv_tab_icon"
+                android:layout_marginLeft="2dp"
+                android:gravity="center"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/lk_dp_5"
+        android:textColor="@color/color_A7A7A7"
+        android:textSize="10sp" />
+
+</LinearLayout>
+

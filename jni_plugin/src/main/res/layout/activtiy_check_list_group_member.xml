@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lk_dp_50">
+
+        <LinearLayout
+            android:id="@+id/ll_group_chooseList_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector_grouplist_back"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:layout_width="@dimen/lk_dp_20"
+                android:layout_height="@dimen/lk_dp_20"
+                android:layout_marginLeft="@dimen/lk_dp_10"
+                android:src="@mipmap/icon_back_group_check_list" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_choose_groupList_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="10"
+            android:padding="@dimen/lk_dp_5"
+            android:singleLine="true"
+            android:text="请选择群聊成员"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/lk_sp_16" />
+
+
+        <TextView
+            android:id="@+id/tv_choose_grConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/lk_dp_50"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_grouplist_back"
+            android:gravity="center"
+            android:paddingLeft="@dimen/lk_dp_15"
+            android:paddingRight="@dimen/lk_dp_15"
+            android:text="完成"
+            android:textColor="@drawable/selector_meeting_choose_comfirm_bg"
+            android:textSize="@dimen/lk_sp_15" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/check_group_bottomLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lk_px_1"
+        android:background="@color/color_CCCCCC" />
+
+
+    <ListView
+        android:id="@+id/lv_choose_members_groupList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:divider="@null"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false" />
+
+</LinearLayout>
